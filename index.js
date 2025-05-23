@@ -1,34 +1,33 @@
 class hero{
-	constructor(name,age,tipo){
+	constructor(name,age,type){
 	this.name = name
 	this.age = age
-	this.tipo = tipo
+	this.type = type
 	}
    attack(){
         let attack
 
-        if (this.tipo === "warrior") {
+        if (this.type === "warrior") {
             attack = "sword"
             
-        } else if (this.tipo === "wizard"){
+        } else if (this.type === "wizard"){
             attack = "magic"
 
-        } else if (this.tipo === "monk") {
+        } else if (this.type === "monk") {
             attack = "martial arts"
             
-        } else if (this.tipo === "Ninja"){
+        } else if (this.type === "Ninja"){
             attack = "shuriken"
 
         } else {
             attack = "unknown"
         }
-        console.log(`The hero of name ${this.name} and class ${this.tipo} attacked using ${attack}`)
+        console.log(`The hero of name ${this.name} and class ${this.type} attacked using ${attack}`)
 
            
             
         }
     }
 
-    let heroi = new hero("Musstafá", 30, "warrior")
-heroi.attack()
-
+    let heroClass = new hero("Musstafá", 30, "warrior")
+heroClass.attack()
